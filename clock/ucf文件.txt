@@ -1,0 +1,61 @@
+NET "number[7]" IOSTANDARD = LVCMOS33;
+NET "number[6]" IOSTANDARD = LVCMOS33;
+NET "number[5]" IOSTANDARD = LVCMOS33;
+NET "number[4]" IOSTANDARD = LVCMOS33;
+NET "number[3]" IOSTANDARD = LVCMOS33;
+NET "number[2]" IOSTANDARD = LVCMOS33;
+NET "number[1]" IOSTANDARD = LVCMOS33;
+NET "number[0]" IOSTANDARD = LVCMOS33;
+NET "select[7]" IOSTANDARD = LVCMOS33;
+NET "select[6]" IOSTANDARD = LVCMOS33;
+NET "select[5]" IOSTANDARD = LVCMOS33;
+NET "select[4]" IOSTANDARD = LVCMOS33;
+NET "select[3]" IOSTANDARD = LVCMOS33;
+NET "select[2]" IOSTANDARD = LVCMOS33;
+NET "select[1]" IOSTANDARD = LVCMOS33;
+NET "select[0]" IOSTANDARD = LVCMOS33;
+NET "clk_100Mhz" IOSTANDARD = LVCMOS33;
+NET "hour_change" IOSTANDARD = LVCMOS33;
+NET "led1" IOSTANDARD = LVCMOS33;
+NET "led2" IOSTANDARD = LVCMOS33;
+NET "minute_change" IOSTANDARD = LVCMOS33;
+NET "mode" IOSTANDARD = LVCMOS33;
+
+
+NET "number[7]" LOC = T10;
+NET "number[6]" LOC = R10;
+NET "number[5]" LOC = K16;
+NET "number[4]" LOC = K13;
+NET "number[3]" LOC = P15;
+NET "number[2]" LOC = T11;
+NET "number[1]" LOC = L18;
+NET "number[0]" LOC = H15;
+NET "select[7]" LOC = U13;
+NET "select[6]" LOC = K2;
+NET "select[5]" LOC = T14;
+NET "select[4]" LOC = P14;
+NET "select[3]" LOC = J14;
+NET "select[2]" LOC = T9;
+NET "select[1]" LOC = J18;
+NET "select[0]" LOC = J17;
+NET "clk_100Mhz" LOC = E3;
+NET "minute_change" LOC = J15;
+NET "hour_change" LOC = L16;
+NET "mode" LOC = M13;
+NET "led1" LOC = H17;
+NET "led2" LOC = K15;
+
+NET "mode" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# PlanAhead Generated IO constraints 
+
+NET "alarm_en" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "alarm_en" LOC = R15;
+NET "led3" LOC = J13;
+
+# PlanAhead Generated IO constraints 
+
+NET "led3" IOSTANDARD = LVCMOS33;
