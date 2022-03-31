@@ -24,11 +24,11 @@ module seven_light(
     output [7:0] led,
     output [7:0] choose
     );
-	
+	//在屏幕上显示HELLO
 	reg [7:0] led;
 	reg [7:0] choose;
 	reg [26:0] counter=0;
-	reg [2:0] temp=0;
+	reg [2:0] temp=0;//用于滚动展示，提高基本要求把这个注释掉就可以
 	
 	//choose:AN7-AN0
 	//led:CA-CG+DP
@@ -74,7 +74,7 @@ module seven_light(
 	
 	always @(posedge clk)
 	begin
-			case(counter[20:18]-temp)
+			case(counter[20:18]-temp)//不用滚动显示时里面去掉-temp即可
 				3'b000:led=8'b11111111;
 						 
 				3'b001:led=8'b11111111;
